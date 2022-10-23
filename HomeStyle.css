@@ -1,0 +1,220 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  /* Location of the image */
+  background-image: url("Background Images/homePageBg.jpg");
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+	
+}
+
+
+h1 {
+    font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 40px;
+	background-color: #00E9FF;
+	padding: 30px;
+	color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 40px darkblue;
+}
+
+h2 {
+    font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 60px;
+	padding: 5px;
+
+ -webkit-animation:colorchange 60s infinite alternate;
+      
+      
+    }
+
+    @-webkit-keyframes colorchange {
+      0% {
+        
+        color:white;
+      }
+      
+      20% {
+        
+        color:black;
+      }
+      
+      40% {
+        
+        color:white;
+      }
+      
+      60% {
+        
+        color:black;
+      }
+      
+      80% {
+        
+        color:white;
+      }
+      
+      100% {
+        
+        color:black;
+      }
+    }
+
+h3 {
+    font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 40px;
+	padding: 5px;
+	color:#00FF49;
+
+ -webkit-animation:colorchange 60s infinite alternate;
+      
+      
+    }
+
+    @-webkit-keyframes colorchange {
+      0% {
+        
+        color:black;
+      }
+      
+      20% {
+        
+        color:white;
+      }
+      
+      40% {
+        
+        color:black;
+      }
+      
+      60% {
+        
+        color:white;
+      }
+      
+      80% {
+        
+        color:black;
+      }
+      
+      100% {
+        
+        color:white;
+      }
+    }
+
+.mainNavigation {						/*colour chage of navigation bar*/
+    background-color: #333;
+    padding: 15px;
+}
+
+.mainNavigation a {						/*edit the text inside the navigation bar*/
+    color: #f2f2f2;
+    text-align: center;
+    padding: 50px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.mainNavigation a:hover {				/* Change the color of links when the mouse cruisor on it */
+    color:#F8DE01;
+}
+
+.mainNavigation .rbtn {						/*edit the text inside the navigation bar*/
+    color:#02FF00;
+    text-align: center;
+    padding: 60px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.mainNavigation .rbtn:hover {				/* Change the color of links when the mouse cruisor on it */
+    color:#DF00FF;
+}
+
+.mainNavigation .lbtn {						/*edit the text inside the navigation bar*/
+    color:#FF0004;
+    text-align: center;
+    padding: 60px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.mainNavigation .lbtn:hover {				/* Change the color of links when the mouse cruisor on it */
+    color:#00F6FF;
+}
+
+
+
+.mainNavigation input[type=text] {		/* Stylling the search box inside the navigation bar */
+  float: right;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border: none;
+  margin-top: 0px;
+  margin-right: 80px;
+  font-size: 17px;
+}
+
+
+* {box-sizing:border-box}
+
+
+.slideshow-container {					/* Slideshow container adjestment*/
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slide {								/* Hide the images by default */
+	display: none;
+}
+
+.fade {									/* Fade Animation*/
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.viewfeed
+{
+	background-color:#00FF82;
+	color:#000000;
+	background-size: 40px;
+	font-size: 30px;
+	border-radius: 10px;
+}
+
+.viewfeed:hover
+{
+	color: #FFFFFF;
+	background-color: #000000;
+}
